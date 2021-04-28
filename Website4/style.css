@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bodybg: #1d2029;
+    --cardbg:#252b43;
+    --cardtit:#fff;
+    --cardtxt:rgba(248, 247, 247, 0.609);
+    --ptext:rgba(248, 247, 247, 0.609);
+    --cardhover:#333a56;
+}
+body{
+    background-color:var(--bodybg);
+}
+
+.lightmode{
+    --bodybg:#fff;
+    --cardbg:#f0f3fa;
+    --cardtit:#000;
+    --cardtxt:#000;
+    --ptext:#000;
+    --cardhover:#e1e3f0;
+}
+h2{
+    color:var(--cardtit) ;
+}
+h3{
+    color:var(--cardtit) ;
+}
+#cardtitel{
+    color:var(--cardtit);
+    font-size: 4rem;
+}
+.card{
+    background-color:var(--cardbg) ;
+}
+.card:hover{
+    background-color: var(--cardhover);
+    --cardbg:var(--cardhover);
+    cursor: pointer;
+}
+.card-body{
+    background-color:var(--cardbg);
+}
+.card-header{
+    background-color:var(--cardbg) ;
+}
+.card-footer{
+    background-color:var(--cardbg) ;
+}
+#cardtext{
+    color:var(--cardtxt);
+    letter-spacing: .5rem;
+}
+#cardfooter{
+    color: #12a781;
+}
+p{
+    color:var(--ptext);
+
+}
+.facebookicon{
+    color:#1691f1;
+    margin-right: 5px;
+}
+.instaicon{
+    /*background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);;
+    */
+    color: rgba(241, 28, 99, 0.883);
+    margin-right: 5px;
+}
+.instacard{
+    border-top: 2px;
+    border-top-style: outset;
+    border-top-color:rgba(241, 28, 99, 0.883);
+}
+#footerlogo{
+    margin-right: 5px;
+}
+.fbcard{
+    border-top: 2px;
+    border-top-style: outset;
+    border-top-color:#1691f1;
+}
+.utubecard{
+    border-top: 2px;
+    border-top-style: outset;
+    border-top-color:red;
+}
+/* toggel switch button start*/
+.flipswitch {
+    position: relative;
+    width: 54px;
+  }
+  .flipswitch input[type=checkbox] {
+    display: none;
+  }
+  .flipswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0px solid #999999;
+    border-radius: 50px;
+  }
+  .flipswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  .flipswitch-inner:before, .flipswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 24px;
+    padding: 0;
+    line-height: 24px;
+    font-size: 18px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  .flipswitch-inner:before {
+    content: "";
+    padding-left: 12px;
+    background-color: #3DB5B3;
+    color: #FFFFFF;
+  }
+  .flipswitch-inner:after {
+    content: "";
+    padding-right: 12px;
+    background-color: #42c697;
+    color: #888888;
+    text-align: right;
+  }
+  .flipswitch-switch {
+    width: 17px;
+    margin: 3.5px;
+    background: #49587D;
+    border: 0px solid #999999;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 29px;
+    transition: all 0.3s ease-in 0s;
+  }
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+    margin-left: 0;
+  }
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+    right: 0;
+  }
+/* toggel switch button end*/
